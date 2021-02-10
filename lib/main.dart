@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 // 引入首页
 import 'home/MyHomePage.dart';
 
+import 'sliver/MySliverGrid.dart';
+
 // 定义入口函数
 void main() => runApp(MyApp());
 
@@ -20,7 +22,8 @@ class MyApp extends StatelessWidget {
         // 按下的颜色
         splashColor: Colors.red,
       ),
-      home: MyHomePage(),
+      // home: MyHomePage(),
+      home: MySliverGrid(),
     );
   }
 }
