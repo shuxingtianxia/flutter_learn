@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 // 首页的主体
 import 'MyHomeBody.dart';
 import '../layout/Layout.dart';
+import '../view/viewDemo.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -10,7 +11,7 @@ class MyHomePage extends StatelessWidget {
     // 控制器，导航和页面的联动效果需要一个控制器去控制
     return DefaultTabController(
       // 控制页面切换的数量，这个数量和页面的数量必须一致
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -65,6 +66,7 @@ class MyHomePage extends StatelessWidget {
             MyHomeBody(),
             Layout(),
             Text('page3'),
+            ViewDemo(),
           ],
         ),
 
@@ -88,6 +90,7 @@ class MyHomePage extends StatelessWidget {
               Tab(text: '首页', icon: Icon(Icons.home)),
               Tab(text: '正在热映', icon: Icon(Icons.movie_creation)),
               Tab(text: '影院信息', icon: Icon(Icons.local_movies)),
+              Tab(text: 'viewDemo', icon: Icon(Icons.local_movies)),
             ],
           ),
         ),
